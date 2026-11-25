@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Визит — ЛЕС</title>
+  <meta name="description" content="Как найти барбершоп ЛЕС: Партизанская 201, ориентир «Мужские стрижки»." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="inner">
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-les.png" alt="" width="44" height="44" />
+      <span>ЛЕС</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="o-nas.html">О нас</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="galereya.html">Галерея</a>
+      <a href="zapis.html" aria-current="page">Визит</a>
+      <a href="obuchenie.html">Обучение</a>
+    </nav>
+    <button class="header-cta" type="button" data-open-book>Запись</button>
+    <button class="menu-btn" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page">
+    <section class="visit">
+      <div class="wrap visit__pair">
+        <div class="visit__map">
+          <iframe
+            title="Барбершоп ЛЕС на Яндекс.Картах"
+            src="https://yandex.ru/map-widget/v1/?ll=83.762340%2C53.330299&z=17&pt=83.762340,53.330299,pm2rdm&l=map"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <aside class="visit__card">
+          <p class="eyebrow">Адрес</p>
+          <h1>Партизанская 201,<br />Барнаул</h1>
+          <ul class="visit__facts">
+            <li>Со стороны дороги — дверь, сверху надпись «Мужские стрижки». Дальше двигайтесь, следуя ориентирам — обычно дверь открыта.</li>
+            <li>Вт–Вс, 10:00–22:00 · Пн — выходной</li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://t.me/" target="_blank" rel="noopener">Telegram</a></li>
+            <li><a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+          <button class="btn btn--solid" type="button" data-open-book>Записаться</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="index.html">
+            <img src="assets/logo-les.png" alt="" width="36" height="36" />
+            <span>ЛЕС</span>
+          </a>
+          <p class="footer__tag">Барбершоп в Барнауле с андерграунд атмосферой и комфортным времяпровождением, кофе-чай, удобная зона ожидания</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <p class="eyebrow">Адрес</p>
+          <p>Партизанская 201,<br />Барнаул</p>
+          <p>
+            <a href="https://yandex.com/maps/197/barnaul/house/partizanskaya_ulitsa_201/bEoYcQFiSEQCQFtpfX9ycX9rZQ==/?ll=83.762340%2C53.330299&amp;z=19.45" target="_blank" rel="noopener">Открыть на карте</a>
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <p class="eyebrow">Часы</p>
+          <p>Вт–Вс · 10:00–22:00<br />Понедельник — выходной</p>
+        </div>
+
+        <div class="footer__col">
+          <p class="eyebrow">Разделы</p>
+          <nav class="footer__nav" aria-label="Подвал">
+            <a href="o-nas.html">О нас</a>
+            <a href="uslugi.html">Услуги</a>
+            <a href="galereya.html">Галерея</a>
+            <a href="zapis.html">Визит</a>
+            <a href="obuchenie.html">Обучение</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Барбершоп ЛЕС · Партизанская 201</p>
+        <button class="footer__book" type="button" data-open-book>Записаться</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

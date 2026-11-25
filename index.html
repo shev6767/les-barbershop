@@ -1,101 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Барбершоп «Лес» - мужские стрижки в Барнауле</title>
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЛЕС — барбершоп</title>
+  <meta name="description" content="Барбершоп в Барнауле с андерграундной атмосферой и комфортным времяпрепровождением: кофе и чай, удобная зона ожидания." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="grain" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-dark container">
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Логотип">ЛЕС</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Меню">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainMenu">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a class="nav-link" href="index.html">Главная</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Услуги и цены</a></li>
-          <li class="nav-item"><a class="nav-link" href="works.html">Наши работы</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-        </ul>
-      </div>
+  <header class="site-header" id="header">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-les.png" alt="" width="44" height="44" />
+      <span>ЛЕС</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="o-nas.html">О нас</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="galereya.html">Галерея</a>
+      <a href="zapis.html">Визит</a>
+      <a href="obuchenie.html">Обучение</a>
     </nav>
+    <button class="header-cta" type="button" data-open-book>Запись</button>
+    <button class="menu-btn" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Ждём вас в Лесу</h1>
-        <p class="lead">Мужские стрижки и уход за бородой. Барнаул, ул. Партизанская, 201</p>
-        <a class="btn btn-les btn-lg mt-3" href="contacts.html#booking">Записаться</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="page-title text-center">Почему к нам ходят</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card feature-card shadow-sm">
-              <div class="card-body">
-                <h3 class="h5">Опытные барберы</h3>
-                <p class="card-text">У каждого мастера больше трёх лет практики. Подберём стрижку под форму лица и тип волос.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card feature-card shadow-sm">
-              <div class="card-body">
-                <h3 class="h5">Спокойная атмосфера</h3>
-                <p class="card-text">Деревянный зал, хорошая музыка и чай или кофе, пока ждёте своей очереди.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card feature-card shadow-sm">
-              <div class="card-body">
-                <h3 class="h5">Понятные цены</h3>
-                <p class="card-text">Стоимость известна заранее, все услуги и цены есть на <a href="services.html">отдельной странице</a>.</p>
-              </div>
-            </div>
-          </div>
+    <section class="hero" id="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <p class="hero__mark" aria-hidden="true">ЛЕС</p>
+      <div class="hero__inner">
+        <p class="eyebrow">Барбершоп · Партизанская 201</p>
+        <img class="hero__logo" src="assets/logo-les.png" alt="ЛЕС" />
+        <h1>Форма,<br />что держит<br />характер</h1>
+        <div class="rule" aria-hidden="true"></div>
+        <p class="hero__lead">Барбершоп в Барнауле с андерграундной атмосферой и комфортным времяпрепровождением: кофе и чай, удобная зона ожидания.</p>
+        <div class="hero__actions">
+          <button class="btn btn--solid" type="button" data-open-book>Записаться</button>
+          <a class="btn btn--ghost" href="uslugi.html">Смотреть услуги</a>
         </div>
       </div>
-    </section>
-
-    <section class="section bg-white">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0">
-            <img class="img-fluid rounded" src="img/hall.jpg" alt="Зал барбершопа" width="800" height="500">
-          </div>
-          <div class="col-md-6">
-            <h2 class="h3">О барбершопе</h2>
-            <p>«Лес» работает с 2021 года. У нас три кресла, поэтому долго ждать не придётся, а по записи вас примут точно ко времени.</p>
-            <p>Посмотреть, как стригут наши мастера, можно в разделе <a href="works.html">«Наши работы»</a>.</p>
-            <a class="btn btn-outline-dark" href="contacts.html">Как нас найти</a>
-          </div>
-        </div>
-      </div>
+      <div class="trees" aria-hidden="true"></div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container d-md-flex justify-content-between">
-      <p class="mb-2 mb-md-0">Барбершоп «Лес», ул. Партизанская, 201</p>
-      <p class="mb-0"><a href="services.html">Цены</a> · <a href="contacts.html#booking">Запись</a></p>
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="index.html">
+            <img src="assets/logo-les.png" alt="" width="36" height="36" />
+            <span>ЛЕС</span>
+          </a>
+          <p class="footer__tag">Барбершоп в Барнауле с андерграундной атмосферой и комфортным времяпрепровождением: кофе и чай, удобная зона ожидания.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <p class="eyebrow">Адрес</p>
+          <p>Партизанская 201,<br />Барнаул</p>
+          <p>
+            <a href="https://yandex.com/maps/197/barnaul/house/partizanskaya_ulitsa_201/bEoYcQFiSEQCQFtpfX9ycX9rZQ==/?ll=83.762340%2C53.330299&amp;z=19.45" target="_blank" rel="noopener">Открыть на карте</a>
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <p class="eyebrow">Часы</p>
+          <p>Вт–Вс · 10:00–22:00<br />Понедельник — выходной</p>
+        </div>
+
+        <div class="footer__col">
+          <p class="eyebrow">Разделы</p>
+          <nav class="footer__nav" aria-label="Подвал">
+            <a href="o-nas.html">О нас</a>
+            <a href="uslugi.html">Услуги</a>
+            <a href="galereya.html">Галерея</a>
+            <a href="zapis.html">Визит</a>
+            <a href="obuchenie.html">Обучение</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Барбершоп ЛЕС · Партизанская 201</p>
+        <button class="footer__book" type="button" data-open-book>Записаться</button>
+      </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
