@@ -888,7 +888,7 @@ h2 {
   height: 100%;
   min-height: 180px;
   object-fit: cover;
-  filter: grayscale(35%) brightness(0.85);
+  filter: brightness(0.9);
 }
 
 .photo--img {

@@ -6,4 +6,6 @@
 
 Сайт: https://shev6767.github.io/les-barbershop/
 
+Фотографии в галерее: Unsplash (бесплатная лицензия Unsplash).
+
 Шевченко Илья, группа 1Веб-41
