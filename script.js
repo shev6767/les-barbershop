@@ -31,14 +31,14 @@ modal.innerHTML = `
       </div>
       <button class="modal__close" type="button" data-close-book aria-label="Закрыть">×</button>
     </div>
-    <form class="book" id="book-form">
+    <form class="book" id="book-form" name="book" novalidate>
       <label>
         Имя
-        <input type="text" name="name" required placeholder="Как к вам обращаться" autocomplete="name" />
+        <input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name" />
       </label>
       <label>
         Телефон
-        <input type="tel" name="phone" id="book-phone" required value="+7" inputmode="numeric" autocomplete="tel" maxlength="18" />
+        <input type="tel" name="phone" id="book-phone" value="+7" inputmode="numeric" autocomplete="tel" maxlength="18" />
       </label>
       <label>
         Услуга
@@ -73,7 +73,6 @@ modal.innerHTML = `
         <textarea name="note" rows="3" placeholder="Мастер, время, пожелания"></textarea>
       </label>
       <button class="btn btn--solid" type="submit">Отправить заявку</button>
-      <p class="book__ok" id="book-ok" hidden>Заявка принята. Это набросок — вживую здесь будет запись к мастеру.</p>
     </form>
   </div>
 `;
@@ -197,7 +196,6 @@ phoneInput.addEventListener("focus", () => {
 function openBook() {
   nav.classList.remove("is-open");
   menuBtn.setAttribute("aria-expanded", "false");
-  modal.querySelector("#book-ok").hidden = true;
   phoneInput.value = PHONE_PREFIX;
   modal.showModal();
 }
@@ -212,13 +210,6 @@ modal.querySelector("[data-close-book]").addEventListener("click", () => {
 
 modal.addEventListener("click", (event) => {
   if (event.target === modal) modal.close();
-});
-
-modal.querySelector("#book-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  modal.querySelector("#book-ok").hidden = false;
-  event.currentTarget.reset();
-  phoneInput.value = PHONE_PREFIX;
 });
 
 document.querySelectorAll("[data-contact-pick]").forEach((btn) => {
